@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>PhotoFox</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" type="text/css" href="bb/style/headers.css">
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <section role="region">
+            <header>
+                <menu id="menubuttons" type="toolbar">
+                    
+                </menu>
+                PhotoFox
+            </header>
+        </section>
+        <section id="main">
+            <div id="overcanvas">
+                <canvas id="canvas" width="0" height="0">Su navegador no soporta CANVAS</canvas>
+                <div id="loading" style="display: none">
+                    <img src="resources/loader.gif"  alt="loading" />
+                </div>
+                <canvas id="canvasBig" width="0" height="0" style="display:none" ></canvas>
+             </div>
+            <div id="menu">
+                <button id="fotoB" onclick="selectFile()"  ></button>
+                <input type="file" id="fileElem" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)" />
+
+            </div>
+
+        </section>
+    </body>
+</html>

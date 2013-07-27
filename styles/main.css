@@ -1,0 +1,100 @@
+ html {
+        font-size: 16px;
+    }
+
+* {
+    
+    margin: 0;
+    padding:  0;
+    
+}
+
+body {
+    background-image: url("../resources/back.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10rem   ;
+    
+}
+
+header {
+    padding-left: 15%;
+    line-height: 4rem;
+    margin-top: -0.2rem;
+    height: 10%;
+    font-size: 2rem;
+}
+
+
+#menu {
+    position:  fixed;
+    bottom: 0px;
+    height: 6rem;
+    width: 100%;
+    background-image: url('../resources/barback.png');
+    text-align: center;
+    background-size: contain;
+    overflow-x: scroll;
+}
+
+#menu button{
+
+    width: 27%;
+    height: 100%;
+    background-color: transparent;
+    background-image:  url('../resources/photoB.png');
+    border: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu .filters {
+    float: left;
+    width: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 80%;
+    margin-top: 0.5rem;
+     
+}
+
+#menu .filters img{
+   width: 4rem;
+    
+}
+
+#menu .filters p {
+    width: 4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+canvas{
+     top: 0;
+     left: 0;
+     position: absolute;
+    box-shadow: 2px 2px 2px black;
+}
+
+#loading {
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: rgba(0,0,0,0.4);
+     z-index: 10;
+}
+
+#loading img {
+     position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -110px; 
+    display: block;    
+}
+
+#fContainer {
+    height: 4rem;
+    width: 36rem;
+}

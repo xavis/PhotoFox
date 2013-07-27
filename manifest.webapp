@@ -1,0 +1,30 @@
+{
+    "version": "0.1",
+    "name": "PhotoFox",
+    "type": "privileged",
+    "description": "Your Firefox way make your photos look great",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "/resources/icons/pf-16.png",
+        "48": "/resources/icons/pf-48.png",
+        "128": "/resources/icons/pf-128.png"
+    },
+    "developer": {
+        "name": "Javier Sánchez Riquelme",
+        "url": "http://xavis.tk"
+    },
+    "installs_allowed_from": ["*"],
+    "locales": {
+        "es": {
+            "description": "Tu manera Firefox de hacer que tus fotos parezcan geniales"
+        }
+        },
+    "orientation": ["portrait"],
+    "default_locale": "en",
+    "permissions": {
+  "storage":{},
+    "device-storage:pictures":{ "access": "readwrite" },
+    "device-storage:videos":{ "access": "readwrite" }
+    
+}
+}
